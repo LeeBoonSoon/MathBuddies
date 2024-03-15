@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/customer_spbkg"
+    tools:context=".customerSupport">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="40dp"
+       android:id="@+id/to"
+       android:text="To:"
+       android:textSize="40dp" />
+
+
+    <EditText
+        android:id="@+id/center_email"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/to"
+        android:layout_marginStart="30dp"
+        android:hint="Enter email address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:id="@+id/Title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:hint="Problem Title"
+        android:layout_below="@+id/center_email"/>
+
+    <EditText
+        android:id="@+id/content_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:hint="Enter problem content"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <Button
+        android:id="@+id/send_email_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp"
+        android:text="Send Email" />
+
+    <Button
+        android:id="@+id/back_home123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_below="@id/content_edit_text"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="    Back    " />
+
+
+
+</RelativeLayout>

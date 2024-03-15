@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/selection_orderinggame">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutDialog"
+        android:background="@drawable/custom_bkg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderingTitle"
+            android:text="Ordering Number"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingTop="28dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/layoutDialog"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderingDesc"
+            android:text="Do you want to select ascending order or descending order?"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/orderingTitle"
+            app:layout_constraintBottom_toTopOf="@+id/select_accOrder"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_accOrder"
+            android:text="Acc Order"
+            android:textSize="14sp"
+            app:cornerRadius = "12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/goldenYellow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderingDesc" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_descOrder"
+            android:text="Desc Order"
+            android:textSize="14sp"
+            app:cornerRadius = "12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/goldenYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderingDesc" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
