@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText mUsernameEditText;
     private EditText mPasswordEditText;
-    private Button mLoginButton;
+    private Button mLoginButton, btn_guest;
     private TextView mRegisterLinkTextView;
 
     private FirebaseAuth mAuth;
@@ -39,6 +39,16 @@ public class LoginActivity extends AppCompatActivity {
         mPasswordEditText = findViewById(R.id.password);
         mLoginButton = findViewById(R.id.loginBtn);
         mRegisterLinkTextView = findViewById(R.id.register_link);
+
+        btn_guest = findViewById(R.id.continue_as_guest);
+
+        btn_guest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override

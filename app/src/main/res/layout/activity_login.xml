@@ -70,7 +70,16 @@
                 android:backgroundTint="@color/orange"
                 app:cornerRadius="20dp" />
 
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/continue_as_guest"
+                android:text="Continue as guest"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="22dp"
+                android:backgroundTint="@color/orange"
+                app:cornerRadius="20dp" />
 
 
             <TextView
