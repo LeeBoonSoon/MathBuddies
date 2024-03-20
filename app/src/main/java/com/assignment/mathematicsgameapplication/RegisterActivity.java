@@ -46,8 +46,6 @@ public class RegisterActivity extends AppCompatActivity {
                 String email = mEmailEditText.getText().toString().trim();
                 String password = mPasswordEditText.getText().toString().trim();
                 String retypePassword = mRetypePasswordEditText.getText().toString().trim();
-
-
                 // Email format validation
                 if (!isValidEmail(email)) {
                     Toast.makeText(RegisterActivity.this, "Please enter a valid email address", Toast.LENGTH_SHORT).show();

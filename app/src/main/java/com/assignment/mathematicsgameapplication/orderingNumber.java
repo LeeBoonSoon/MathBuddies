@@ -80,7 +80,6 @@ public class orderingNumber extends AppCompatActivity {
         }
     }
 
-
     View.OnLongClickListener longClickListener = new View.OnLongClickListener() {
         @Override
         public boolean onLongClick(View v) {
