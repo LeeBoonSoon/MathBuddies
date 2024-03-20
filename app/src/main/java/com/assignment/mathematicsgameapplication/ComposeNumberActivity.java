@@ -183,8 +183,6 @@ public class ComposeNumberActivity extends AppCompatActivity {
         }
     }
 
-
-
     private boolean isValidSymbol(String input) {
         return input.equals("+") || input.equals("-") || input.equals("*") || input.equals("/");
     }
